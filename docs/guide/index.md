@@ -18,7 +18,7 @@ You can learn more about the rationale behind the project in the [Why Vite](./wh
 
 ## Browser Support
 
-- The default build targets browsers that support both [native ESM via script tags](https://caniuse.com/es6-module) and [native ESM dynamic import](https://caniuse.com/es6-module-dynamic-import). Legacy browsers can be supported via the official [@vitejs/plugin-legacy](https://github.com/vitejs/vite/tree/main/packages/plugin-legacy) - see the [Building for Production](./build) section for more details.
+- The default build targets browsers that support both [native ES Modules](https://caniuse.com/es6-module) and [native ESM dynamic import](https://caniuse.com/es6-module-dynamic-import). Legacy browsers can be supported via the official [@vitejs/plugin-legacy](https://github.com/vitejs/vite/tree/main/packages/plugin-legacy) - see the [Building for Production](./build) section for more details.
 
 ## Trying Vite Online
 
@@ -38,13 +38,13 @@ The supported template presets are:
 ## Scaffolding Your First Vite Project
 
 ::: tip Compatibility Note
-Vite requires [Node.js](https://nodejs.org/en/) version >=12.2.0. However, some templates require a higher Node.js version to work, please upgrade if your package manager warns about it.
+Vite requires [Node.js](https://nodejs.org/en/) version >=14.6.0. However, some templates require a higher Node.js version to work, please upgrade if your package manager warns about it.
 :::
 
 With NPM:
 
 ```bash
-$ npm init vite@latest
+$ npm create vite@latest
 ```
 
 With Yarn:
@@ -65,10 +65,10 @@ You can also directly specify the project name and the template you want to use 
 
 ```bash
 # npm 6.x
-npm init vite@latest my-vue-app --template vue
+npm create vite@latest my-vue-app --template vue
 
 # npm 7+, extra double-dash is needed:
-npm init vite@latest my-vue-app -- --template vue
+npm create vite@latest my-vue-app -- --template vue
 
 # yarn
 yarn create vite my-vue-app --template vue
@@ -113,7 +113,7 @@ Running `vite` starts the dev server using the current working directory as root
 
 ## Command Line Interface
 
-In a project where Vite is installed, you can use the `vite` binary in your npm scripts, or run it directly with `npx vite`. Here is the default npm scripts in a scaffolded Vite project:
+In a project where Vite is installed, you can use the `vite` binary in your npm scripts, or run it directly with `npx vite`. Here are the default npm scripts in a scaffolded Vite project:
 
 <!-- prettier-ignore -->
 ```json5
@@ -145,4 +145,4 @@ Then go to your Vite based project and run `pnpm link --global vite` (or the pac
 
 ## Community
 
-If you have questions or need help, reach out to the community at [Discord](https://discord.gg/4cmKdMfpU5) and [GitHub Discussions](https://github.com/vitejs/vite/discussions).
+If you have questions or need help, reach out to the community at [Discord](https://chat.vitejs.dev) and [GitHub Discussions](https://github.com/vitejs/vite/discussions).
